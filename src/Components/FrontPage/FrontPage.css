@@ -1,0 +1,138 @@
+.frontPage-main {
+  min-height: 100vh;
+}
+.frontPage-sec1 {
+  min-height: 100vh;
+  background: rgb(56, 212, 156);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 212, 156, 1) 31%,
+    rgba(39, 84, 135, 1) 97%
+  );
+  /* background: rgb(56, 212, 156);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 212, 156, 1) 47%,
+    rgba(22, 47, 75, 1) 97%
+  ); */
+  /* background: rgb(56, 212, 156);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 212, 156, 1) 35%,
+    rgba(18, 222, 210, 1) 97%
+  ); */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.frontPage-sec1-leftDiv {
+  padding: 0px 130px;
+  width: 50%;
+  align-self: flex-start;
+  margin-top: 120px;
+}
+.frontPage-sec1-leftDiv h1 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+.frontPage-sec1-leftDiv h1 span {
+  color: #162f4b;
+}
+.frontPage-sec1-leftDiv h5 {
+  color: rgb(47, 47, 47);
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+.frontPage-sec1-leftDiv-buttonDiv {
+  display: flex;
+  padding: 50px 20px;
+  justify-content: space-around;
+}
+.frontPage-sec1-leftDiv-buttonDiv button {
+  height: 50px;
+  width: 170px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 18px;
+  transition: 0.45s all;
+  cursor: pointer;
+}
+
+.frontPage-sec1-leftDiv-buttonDiv-signInBtn {
+  border: 3px solid #162f4b;
+  color: rgb(56, 212, 156);
+  background-color: #162f4b;
+}
+.frontPage-sec1-leftDiv-buttonDiv-signInBtn:hover {
+  background-color: transparent;
+  color: #162f4b;
+  letter-spacing: 2px;
+  width: 200px;
+}
+.frontPage-sec1-leftDiv-buttonDiv-registrationBtn {
+  border: 3px solid #162f4b;
+  color: #162f4b;
+  background-color: transparent;
+}
+.frontPage-sec1-leftDiv-buttonDiv-registrationBtn:hover {
+  background-color: #162f4b;
+  color: rgb(56, 212, 156);
+  letter-spacing: 2px;
+  width: 200px;
+}
+.frontPage-sec1-rightDiv {
+  width: 50%;
+  height: 70vh;
+  align-self: flex-end;
+  overflow: hidden;
+}
+.frontPage-sec1-rightDiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.frontPage-navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 130px;
+  width: 100%;
+  min-height: 70px;
+}
+.frontPage-navbar-logo {
+  width: 140px;
+}
+.frontPage-navbar-logo img {
+  width: 100%;
+  height: 100%;
+}
+.frontPage-navbar-links {
+  width: 300px;
+}
+.frontPage-navbar-links div {
+  border-left: 3px solid #162f4b;
+  height: 40px;
+}
+.frontPage-navbar-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.frontPage-navbar-links ul li {
+}
+.frontPage-navbar-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: 0.5s all;
+  padding: 8px 12px;
+}
+.frontPage-navbar-links ul li a:hover {
+  background-color: #162f4b;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
