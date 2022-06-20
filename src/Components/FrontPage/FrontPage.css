@@ -29,7 +29,7 @@
   padding: 0px 130px;
   width: 50%;
   align-self: flex-start;
-  margin-top: 120px;
+  margin-top: 180px;
 }
 .frontPage-sec1-leftDiv h1 {
   font-size: 2.3rem;
@@ -43,6 +43,7 @@
   color: rgb(47, 47, 47);
   font-weight: normal;
   font-size: 0.95rem;
+  text-align: justify;
 }
 .frontPage-sec1-leftDiv-buttonDiv {
   display: flex;
@@ -50,6 +51,15 @@
   justify-content: space-around;
 }
 .frontPage-sec1-leftDiv-buttonDiv button {
+  height: 50px;
+  width: 170px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 18px;
+  transition: 0.45s all;
+  cursor: pointer;
+}
+.frontPage-sec1-leftDiv-buttonDiv a {
   height: 50px;
   width: 170px;
   border-radius: 50px;
@@ -71,6 +81,10 @@
   width: 200px;
 }
 .frontPage-sec1-leftDiv-buttonDiv-registrationBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #162f4b;
   color: #162f4b;
   background-color: transparent;
@@ -83,12 +97,16 @@
 }
 .frontPage-sec1-rightDiv {
   width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
   height: 70vh;
-  align-self: flex-end;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 .frontPage-sec1-rightDiv img {
-  height: 100%;
+  height: 80%;
   width: 100%;
   border-radius: 10px;
 }
@@ -97,9 +115,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 130px;
+  padding: 5px 130px;
   width: 100%;
   min-height: 70px;
+  transition: 0.4s all;
+  z-index: 999;
+}
+.frontPage-navbar.scroll {
+  /* background-color: rgb(235, 235, 235); */
+  background-color: rgb(56, 212, 156);
+  box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.75);
 }
 .frontPage-navbar-logo {
   width: 140px;
@@ -109,7 +136,7 @@
   height: 100%;
 }
 .frontPage-navbar-links {
-  width: 300px;
+  width: 360px;
 }
 .frontPage-navbar-links div {
   border-left: 3px solid #162f4b;
@@ -126,13 +153,252 @@
 .frontPage-navbar-links ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 400;
   transition: 0.5s all;
-  padding: 8px 12px;
+  padding: 8px 25px;
 }
 .frontPage-navbar-links ul li a:hover {
   background-color: #162f4b;
   border-radius: 20px;
   letter-spacing: 3px;
+}
+.frontPage-features {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.frontPage-features h1 {
+  color: #162f4b;
+  width: 60%;
+  text-align: center;
+  padding: 50px 0px;
+}
+.frontPage-features-main {
+  width: 60%;
+}
+.frontPage-features-mainSec1,
+.frontPage-features-mainSec2 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.frontPage-features-mainSec1 div,
+.frontPage-features-mainSec2 div {
+  width: 33.33333333%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s all;
+}
+.frontPage-features-mainSec1 div:nth-child(1) {
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.frontPage-features-mainSec1 div:nth-child(2) {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  border-right: 1px solid rgb(210, 210, 210);
+  border-left: 1px solid rgb(210, 210, 210);
+}
+.frontPage-features-mainSec1 div:nth-child(3) {
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.frontPage-features-mainSec2 div:nth-child(2) {
+  border-right: 1px solid rgb(210, 210, 210);
+  border-left: 1px solid rgb(210, 210, 210);
+}
+/* 
+.frontPage-features-mainSec1 div:hover,
+.frontPage-features-mainSec2 div:hover {
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+} */
+
+.frontPage-features-mainSec1 div img,
+.frontPage-features-mainSec2 div img {
+  width: 80px;
+  height: 80px;
+}
+.frontPage-features-mainSec1 div p,
+.frontPage-features-mainSec2 div p {
+  text-align: 0center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.frontPage-register {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px 30px 0px;
+}
+.frontPage-register-headingDiv {
+  width: 60%;
+  text-align: center;
+}
+.frontPage-register-headingDiv h1 {
+  color: #162f4b;
+}
+.frontPage-register-headingDiv p {
+  color: rgb(146, 146, 146);
+}
+.frontPage-register form {
+  padding: 30px 0px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontPage-register form input {
+  margin-bottom: 10px;
+  width: 40%;
+  height: 45px;
+  padding: 0px 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.frontPage-register form input:focus {
+  outline: none;
+  border-bottom: 2px solid #162f4b;
+}
+.frontPage-register form textarea {
+  width: 40%;
+  height: 120px;
+  border: none;
+  border-bottom: 1px solid gray;
+  resize: none;
+  padding: 10px;
+}
+.frontPage-register form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #162f4b;
+}
+.frontPage-register form button {
+  margin-top: 40px;
+  height: 45px;
+  width: 200px;
+  border: 2px solid rgb(56, 212, 156);
+  background-color: rgb(56, 212, 156);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.frontPage-register form button:hover {
+  border-radius: 0px;
+  background-color: transparent;
+  color: rgb(56, 212, 156);
+  letter-spacing: 2px;
+}
+
+.frontPage-aboutUs-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+.frontPage-aboutUs-Sec1 {
+  width: 60%;
+  text-align: center;
+}
+.frontPage-aboutUs-Sec1 h1 {
+  color: #162f4b;
+  margin-bottom: 20px;
+}
+.frontPage-aboutUs-Sec1 p {
+  color: gray;
+  margin-bottom: 20px;
+}
+.frontPage-aboutUs-Sec2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  width: 60%;
+  height: 280px;
+}
+.frontPage-aboutUs-Sec2 img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.frontPage-aboutUs-Sec2-img1 h5,
+.frontPage-aboutUs-Sec2-img2 h5,
+.frontPage-aboutUs-Sec2-img3 h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #162f4b;
+}
+.frontPage-footer-main {
+  background-color: #162f4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.75);
+}
+.frontPage-footer-nameDiv {
+  padding: 20px 0px;
+  width: 90%;
+}
+.frontPage-footer-nameDiv img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.frontPage-footer-nameDiv h5 {
+  color: rgb(56, 212, 156);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+.frontPage-footer-contactDiv {
+  width: 90%;
+}
+.frontPage-footer-contactDiv a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  height: 30px;
+  font-size: 1.4rem;
+}
+.frontPage-footer-contactDiv a span {
+  margin: 0px 10px;
+  font-size: 1rem;
+}
+.frontPage-footer-contactDiv a span:hover {
+  text-decoration: underline;
+}
+.frontPage-footer-socials {
+  margin-bottom: 30px;
+  width: 12%;
+  margin-left: 45%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+.frontPage-footer-socials a {
+  font-size: 2rem;
+  color: rgb(56, 212, 156);
+  transition: 0.3s all;
+}
+.frontPage-footer-socials a:hover {
+  color: white;
 }
